@@ -16,7 +16,7 @@ default_args = {
     "retry_delay": timedelta(minutes=5),
     "start_date": datetime(2024, 1, 1),
     "email_on_failure": False,
-    "email_on_retry": False
+    "email_on_retry": False,
 }
 
 # Define the DAG
@@ -26,7 +26,7 @@ with DAG(
     description="An example DAG to demonstrate code formatting with flake8 and Black.",
     schedule=timedelta(days=1),
     catchup=False,
-    tags=["dag6"]
+    tags=["dag6"],
 ) as dag:
 
     # Define the Python task
