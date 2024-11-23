@@ -28,3 +28,4 @@ jobs:
       with:
         path: 'dags/*.py'
         destination: ${{ secrets.GCP_SA_BUCKET }}
+        parent: false
