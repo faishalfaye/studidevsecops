@@ -11,7 +11,7 @@ def my_python_function():
 
 # Default arguments for the DAG
 default_args = {
-    "owner": "faishalrayyan",
+    "owner": "faishal_rayyan",
     "retries": 0,
     "retry_delay": timedelta(minutes=5),
     "start_date": datetime(2024, 1, 1),

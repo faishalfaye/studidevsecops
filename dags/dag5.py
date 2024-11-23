@@ -6,7 +6,7 @@ from airflow.operators.dummy import DummyOperator
 
 # Define default arguments for the DAG
 default_args = {
-    "owner": "faishalrayyan",
+    "owner": "faishal_rayyan",
     "depends_on_past": False,
     "retries": 1,
     "email_on_failure": False,

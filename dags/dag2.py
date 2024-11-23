@@ -12,7 +12,7 @@ def print_hello():
 
 
 DEFAULT_ARGS = {
-    "owner": "faishalrayyan",
+    "owner": "faishal_rayyan",
     "depends_on_past": False,
     "retries": 0,
     "email_on_failure": False,
