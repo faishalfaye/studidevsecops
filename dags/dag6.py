@@ -1,0 +1,40 @@
+from airflow import DAG
+from airflow.operators.python import PythonOperator
+from airflow.operators.bash import BashOperator
+from datetime import datetime, timedelta
+
+
+def my_python_function():
+    """A simple Python function that could be a task in your DAG."""
+    print("This is a Python function executed as part of the DAG.")
+
+
+# Default arguments for the DAG
+default_args = {
+    "owner": "airflow",
+    "retries": 1,
+    "retry_delay": timedelta(minutes=5),
+    "start_date": datetime(2024, 1, 1),
+}
+
+# Define the DAG
+with DAG(
+    "example_dag",
+    default_args=default_args,
+    description="An example DAG to demonstrate code formatting with flake8 and Black.",
+    schedule=timedelta(days=1),
+    catchup=False,
+) as dag:
+
+    # Define the Python task
+    python_task = PythonOperator(
+        task_id="python_task", python_callable=my_python_function
+    )
+
+    # Define a Bash task
+    bash_task = BashOperator(
+        task_id="bash_task", bash_command="echo 'Hello from Bash!'"
+    )
+
+    # Set task dependencies (order of execution)
+    python_task >> bash_task
