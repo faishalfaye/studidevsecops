@@ -21,7 +21,7 @@ dag = DAG(
     schedule="@daily",  # Runs once per day
     start_date=datetime(2024, 1, 1),
     catchup=False,
-    tags=["example"],
+    tags=["dag5"],
 )
 
 # Define the tasks
