@@ -36,4 +36,3 @@ task = PythonOperator(
     python_callable=print_hello,
     dag=dag,  # The DAG the task belongs to
 )
-

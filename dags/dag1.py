@@ -3,7 +3,8 @@ from datetime import datetime
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 
-# Define a simple Python function to be used in tasks
+
+
 def print_hello():
     print("Hello, Iran, Israel, Indonesia!")
 
