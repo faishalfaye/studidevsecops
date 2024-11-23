@@ -4,7 +4,6 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 
 
-
 def print_hello():
     print("Hello, Iran, Israel, Indonesia!")
 
