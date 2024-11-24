@@ -19,8 +19,6 @@ jobs:
     steps:
     - id: 'checkout'
       uses: 'actions/checkout@v4'
-    - id: 'check_filepath'
-      run: pwd
     - id: 'auth'
       uses: 'google-github-actions/auth@v2'
       with:
@@ -31,3 +29,5 @@ jobs:
         path: 'dags'
         destination: ${{ secrets.GCP_SA_BUCKET }}
         parent: false
+        headers: |-
+          content-type: 'text/x-python-script'
