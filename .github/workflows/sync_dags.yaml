@@ -31,3 +31,4 @@ jobs:
         parent: false
         headers: |-
           content-type: text/x-python-script
+        gzip: false
