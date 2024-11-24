@@ -30,4 +30,4 @@ jobs:
         destination: ${{ secrets.GCP_SA_BUCKET }}
         parent: false
         headers: |-
-          content-type: 'text/x-python-script'
+          content-type: text/x-python-script
