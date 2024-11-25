@@ -24,7 +24,7 @@ with DAG(
     "example_dag",
     default_args=default_args,
     description="An example DAG to demonstrate code formatting with flake8 and Black.",
-    schedule=timedelta(days=1),
+    schedule="* * * * *",
     catchup=False,
     tags=["dag6"],
 ) as dag:
