@@ -15,7 +15,7 @@ default_args = {
 
 # Initialize the DAG
 dag = DAG(
-    "simple_dag",  # DAG ID
+    "dag5-v1.0.0.0",  # DAG ID
     description="A simple dummy DAG",
     default_args=default_args,
     schedule="@daily",  # Runs once per day
