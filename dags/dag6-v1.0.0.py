@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 
 
 def my_python_function():
-    """A simple Python function that could be a task in your DAG."""
+    """A simple Python Python function that could be a task in your DAG."""
     print("This is a Python function executed as part of the DAG.")
 
 
